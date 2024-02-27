@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> </title>
+  <style>
+    /* Общие стили */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .calendar-widget {
+      background-color: #fff;
+      border: 2px solid #000000;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+    }
+
+    .calendar-icon {
+      margin-right: 10px;
+    }
+
+    .calendar-text {
+      font-size: 20px;
+      color: #000000;
+    }
+  </style>
+</head>
+<body>
+  <div class="calendar-widget">
+    <img src="https://cdn-icons-png.flaticon.com/128/2838/2838779.png" class="calendar-icon" width="30">
+    <span class="calendar-text" id="current-month-year"></span>
+  </div>
+
+  <script>
+    // JavaScript для отображения текущего месяца и года
+    var months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
+    var currentDate = new Date();
+    var currentMonth = months[currentDate.getMonth()];
+    var currentYear = currentDate.getFullYear();
+    document.getElementById('current-month-year').textContent = currentMonth + ' ' + currentYear;
+  </script>
+</body>
+</html>
