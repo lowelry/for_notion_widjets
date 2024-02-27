@@ -8,7 +8,7 @@
     /* Общие стили */
     body {
       font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
+      background-color: #ffffff;
       margin: 0;
       padding: 0;
       display: flex;
@@ -18,7 +18,7 @@
     }
 
     .calendar-widget {
-      background-color: #fff;
+      background-color: #ffffff;
       border: 2px solid #000000;
       border-radius: 10px;
       padding: 20px;
@@ -45,10 +45,8 @@
 
   <script>
     // JavaScript для отображения текущего месяца и года
-    var months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
-    var currentDate = new Date();
-    var currentMonth = months[currentDate.getMonth()];
-    var currentYear = currentDate.getFullYear();
+    var currentMonth = 'March';
+    var currentYear = '2024';
     document.getElementById('current-month-year').textContent = currentMonth + ' ' + currentYear;
   </script>
 </body>
